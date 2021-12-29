@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title> login page </title>
+        <link rel="stylesheet" href="style2.css">
+        
+        <script>
+            function validate(text1,text2)
+            {
+                if(text1=="user" && text2=="Pass@1234")
+                    alert("Welcome!  Sucessfully logged in");
+
+                else
+                    alert("Incorrect login credential");
+            }
+        </script>
+    </head>
+        
+    <body>
+        <div class="login-box">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMvXiZ-H05hhGQOegwhsOAgjew1qJQlfiAkA&usqp=CAU" class="avatar">
+            <h1>Login Here</h1>
+
+            <form action="" onsubmit="validate(username.value,password.value)">
+                <p>User Name</p>
+                <input type="text" name="username" required>
+
+                <p> Password</p>
+                <input type="password" name="password" required>
+
+                <button name="submit" id="Sub">Login</button><br><br>
+
+                <a href="task2.html" style="color: aliceblue">Register Now</a>   
+            </form>
+        </div>
+    </body>
+</html>
